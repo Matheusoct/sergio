@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css11.css" />
+    
+    <title>Formulário de Pesquisa</title>
+  </head>
+
+  <header>
+    <h1>Formulários</h1>
+    <p>Para inscrição em concursos.</p>
+  </header>
+
+  <body>
+    <div class="container-fluid">
+        <form class="form">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome"
+                required
+            />
+            <div class="form-group">
+                <label for="idade">Idade</label>
+                <input
+                type="number"
+                id="idade"
+                name="idade"
+                min="15"
+                max="80"
+                placeholder="Idade"
+                required
+                />
+            </div>
+            <div class="form-group">
+                <label for="sexo">Sexo</label>
+                <select id="dropdown" name="sexo" required>
+                    <option value="disable selected value">Sexo</option>
+                    <option value="Man">Masculino</option>
+                    <option value="Woman">Feminino</option>
+                    <option value="others">Outros</option>
+                    <option value="prefer not to say">Prefiro não dizer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nascimento">Nascimento</label>
+                <input
+                type="nascimento"
+                id="nascimento"
+                name="nascimento"
+                placeholder="Digite sua data de nascimento"
+                required
+                />
+            </div>               
+                <div class="form-group">
+                <label for="Endereço">Endereço</label>
+                <input
+                type="Endereço"
+                id="Endereço"
+                name="Endereço"
+                placeholder="Digite seu endereço"
+                required
+                />
+            </div>
+            <div class="form-group">
+                <label for="Cidade">Cidade</label>
+                <input
+                type="Cidade"
+                id="Cidade"
+                name="Cidade"
+                placeholder="Digite sua Cidade"
+                required
+                />
+            </div>
+            <div class="form-group">
+                <label for="Estado">Estado</label>
+                <select id="dropdown" name="Estado" required>
+                    <option value="disable selected value">Estado</option>
+                    <option value="Acre">AC</option>
+                    <option value="Alagoas">AL</option>
+                    <option value="Amapá">AP</option>
+                    <option value="Amazonas">AM</option>
+                    <option value="Bahia">BA</option>
+                    <option value="Ceará">CE</option>
+                    <option value="Esperito santo">ES</option>
+                    <option value="Goiás">GO</option>
+                    <option value="Maranhão">MA</option>
+                    <option value="Mato Grosso">MT</option>
+                    <option value="Mato Grosso do Sul">MS</option>
+                    <option value="Minas Gerais">MG</option>
+                    <option value="Pará">PA</option>
+                    <option value="Paraná">PR</option>
+                    <option value="Pernanbuco">PE</option>
+                    <option value="Píaui">PI</option>
+                    <option value="Rio de Janeiro">RJ</option>
+                    <option value="Rio Grande do Norte">RN</option>
+                    <option value="Rio Grande do Sul">RS</option>
+                    <option value="Rondônia">RO</option>
+                    <option value="Roraima">RR</option>
+                    <option value="Sante Catarina">SC</option>
+                    <option value="São Paulo">SP</option>
+                    <option value="Sergipe">SE</option>
+                    <option value="Tocantins">TO</option>
+                    <option value="Distrito Federal">DF</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu email"
+                required
+            />
+        </div>
+        <div class="form-group">
+            <label for="cargo">Cargo</label>
+            <input
+            type="cargo"
+            id="cargo"
+            name="cargo"
+            placeholder="Digite o cargo de interesse"
+            required
+            />
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="situacao">Qual opção descreve sua situação atual?</label>
+          <select id="dropdown" name="situacao" required>
+            <option value="disable selected value">Escolha sua opção</option>
+            <option value="student">Estudante</option>
+            <option value="job">Empregado</option>
+            <option value="learner">Empregado meio periodo</option>
+            <option value="preferNo">Prefiro não responder</option>
+            <option value="other">Outro</option>
+          </select>
+        </div>
+
+        <div class="form-radio-checkbox">
+          <label>Possui alguma deficiençia?</label>
+          <label>
+            <input
+              type="radio"
+              name="recommend"
+              value="sim"
+              class="input-radio"
+            />Sim
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="recommend"
+              value="nao"
+              class="input-radio"
+            />Não
+          </label>
+        </div>
+
+        <div class="form-radio-checkbox">
+          <label>Setores:</label>
+          <label>
+            <input
+              type="checkbox"
+              name="melhorias"
+              value="projetos-de-front-end"
+              class="input-checkbox"
+            />Almoferifado
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="melhorias"
+              value="projetos-de-back-end"
+              class="input-checkbox"
+            />Produção
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="melhorias"
+              value="visualização-de-dados"
+              class="input-checkbox"
+            />Esmaltação
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="melhorias"
+              value="postagens-instagram"
+              class="input-checkbox"
+            />Marketing
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="melhorias"
+              value="videos"
+              class="input-checkbox"
+            />Fiscais
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="melhorias"
+              value="desafios"
+              class="input-checkbox"
+            />Tecnico em informatica
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="melhorias"
+              value="forum"
+              class="input-checkbox"
+            />Juridico
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="melhorias"
+              value="cursos"
+              class="input-checkbox"
+            />Recursos Humanos
+          </label>
+        </div>
+        <div class="form-group">
+        <a href="matheusoclaudino@gmail.com">Enviar</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
