@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>removeClass demostração</title>
+  <style>
+    p {
+      margin: 4px;
+      font-size: 16px;
+      font-weight: bolder;
+    }
+    .blue {
+      color: blue;
+    }
+    .under {
+      text-decoration: underline;
+    }
+    .highlight {
+      background: yellow;
+    }
+    </style>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+<body>
+ 
+  <p class="blue under">Olá</p>
+  <p class="blue under highlight">Proximo</p>
+  <p class="blue under">Outro</p>
+  <p class="blue under">Tchau Tchau</p>
+ 
+<script>
+  $( "p" ).even().removeClass( "blue" );
+  </script>
+ 
+</body>
+</html>
