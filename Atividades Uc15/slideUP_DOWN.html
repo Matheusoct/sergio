@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo slideUp e slideDown</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #conteudo {
+            width: 300px;
+            height: 200px;
+            background-color: #f2f2f2;
+            margin: 10px 0;
+            display: none; /* Começa escondido */
+        }
+    </style>
+</head>
+<body>
+    <button id="mostrar">Mostrar</button>
+    <button id="esconder">Esconder</button>
+   
+    <div id="conteudo">
+        Este é o conteúdo a ser mostrado ou escondido.
+    </div>
+ 
+    <script>
+        $(document).ready(function(){
+            $("#mostrar").click(function(){
+                $("#conteudo").slideDown("slow");
+            });
+ 
+            $("#esconder").click(function(){
+                $("#conteudo").slideUp("fast");
+            });
+        });
+    </script>
+</body>
+</html>
